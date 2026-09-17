@@ -1,0 +1,8 @@
+aiohttp>=3.9
+aiohttp-socks>=0.8
+aiosqlite>=0.19
+phonenumbers>=8.13
+rich>=13.7
+pyyaml>=6.0
+pydantic>=2.6
+pydantic-settings>=2.2
