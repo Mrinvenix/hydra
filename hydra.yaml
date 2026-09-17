@@ -1,0 +1,27 @@
+# ──────────────────────────────────────────────────────────────────────
+#  HYDRA config · v5 · by @MrInvenix · t.me/info_by_invenix
+#  Секреты — только через env (HYDRA_HIBP_KEY, HYDRA_EMAILREP_KEY).
+# ──────────────────────────────────────────────────────────────────────
+
+engine:
+  concurrency: 25
+  timeout: 12.0
+  retries: 3
+  max_retry_after: 60.0
+  cache_ttl: 900
+  cache_path: osint_cache.db
+  mode: passive
+
+proxy:
+  list: []
+  rotate_every: 20
+
+wmn:
+  enabled: true
+  categories: [social, coding, dating, gaming]
+  limit: 200
+  cache_path: wmn_cache.json
+  refresh_days: 7
+
+checkers: {}
+allow_active: false
